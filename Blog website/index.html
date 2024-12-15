@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#post1">Nature</a></li>
+        <li><a href="#post2">Sports</a></li>
+        <li><a href="#post3">Cars</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Posts -->
+  <main>
+    <section id="post1" class="blog-post fade-in">
+      <h2>Exploring Nature</h2>
+      <p class="date">Published on: December 15, 2024</p>
+      <img src="https://via.placeholder.com/800x400/1e8e34/fff?text=Nature" alt="Nature Image" class="post-img zoom-in">
+      <p>This post is all about exploring the beauty of nature. From lush green forests to magnificent mountains, nature has a way of inspiring us.</p>
+
+      <!-- Comment Section -->
+      <div class="comments">
+        <h3>Comments</h3>
+        <div id="commentsPost1"></div>
+        <input type="text" id="namePost1" placeholder="Your Name">
+        <textarea id="commentPost1" placeholder="Your Comment"></textarea>
+        <button onclick="addComment('Post1')">Submit</button>
+      </div>
+    </section>
+
+    <section id="post2" class="blog-post fade-in">
+      <h2>Sports Adventures</h2>
+      <p class="date">Published on: December 14, 2024</p>
+      <img src="https://via.placeholder.com/800x400/f0505d/fff?text=Sports" alt="Sports Image" class="post-img zoom-in">
+      <p>Sports are a great way to stay fit and active. In this post, we dive into the world of thrilling sports like football, basketball, and extreme sports.</p>
+
+      <!-- Comment Section -->
+      <div class="comments">
+        <h3>Comments</h3>
+        <div id="commentsPost2"></div>
+        <input type="text" id="namePost2" placeholder="Your Name">
+        <textarea id="commentPost2" placeholder="Your Comment"></textarea>
+        <button onclick="addComment('Post2')">Submit</button>
+      </div>
+    </section>
+
+    <section id="post3" class="blog-post fade-in">
+      <h2>The World of Cars</h2>
+      <p class="date">Published on: December 13, 2024</p>
+      <img src="https://via.placeholder.com/800x400/3f51b5/fff?text=Cars" alt="Cars Image" class="post-img zoom-in">
+      <p>Cars have evolved over the years, offering speed, comfort, and style. In this post, we explore some of the most iconic cars on the road today.</p>
+
+      <!-- Comment Section -->
+      <div class="comments">
+        <h3>Comments</h3>
+        <div id="commentsPost3"></div>
+        <input type="text" id="namePost3" placeholder="Your Name">
+        <textarea id="commentPost3" placeholder="Your Comment"></textarea>
+        <button onclick="addComment('Post3')">Submit</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 My Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
